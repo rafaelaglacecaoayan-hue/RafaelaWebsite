@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up | RNHS</title>
+    <style>
+        body {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('jh.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Centered Logo Branding */
+        .top-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .top-branding img {
+            height: 100px;
+            width: auto;
+            filter: drop-shadow(0 0 10px var(--primary));
+        }
+
+        .top-branding h1 {
+            color: white;
+            font-family: 'Orbitron';
+            font-size: 2.2rem;
+            margin-top: 10px;
+        }
+
+        .signup-box {
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 40px;
+            border: 1px solid var(--secondary);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .school-name-pink { 
+            color: var(--primary); 
+            font-family: 'Orbitron'; 
+            font-size: 1rem; 
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        h2 { color: white; font-size: 2.5rem; margin-bottom: 5px; }
+        p.subtitle { color: var(--gray); font-size: 0.9rem; margin-bottom: 25px; }
+
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px 20px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 30px;
+            color: white;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(157, 78, 221, 0.3);
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin: 15px 0;
+            color: var(--gray);
+            font-size: 0.85rem;
+        }
+
+        .btn-create {
+            background: var(--primary);
+            color: white;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-top: 10px;
+        }
+
+        .btn-create:hover {
+            background: var(--primary-glow);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--primary);
+        }
+
+        .footer-link { margin-top: 20px; color: var(--gray); }
+        .footer-link a { color: var(--primary); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="top-branding">
+        <img src="logo.jpg" alt="Logo">
+        <h1>RNHS</h1>
+    </div>
+
+    <div class="signup-box">
+        <div class="school-name-pink">Rosales National High School Web</div>
+        
+        <h2>Sign Up</h2>
+        <p class="subtitle">Please fill in the form to create your account</p>
+
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-input" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" class="form-input" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" class="form-input" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="password" class="form-input" placeholder="Confirm Password" required>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox"> Show Password</label>
+                <label><input type="checkbox" required> I agree to the Terms & Conditions</label>
+            </div>
+
+            <button type="button" class="btn-create" onclick="location.href='Home.html'">Create Account</button>
+        </form>
+
+        <div class="footer-link">
+            Already have an account? <a href="Login.html">Log In</a>
+        </div>
+    </div>
+
+</body>
+</html>

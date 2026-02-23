@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Rosales National High School</title>
+    <style>
+        /* Styles for the Toggle Section */
+        #resumeSection {
+            display: none; /* Hidden by default */
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .btn-toggle {
+            background: var(--primary);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-family: 'Orbitron';
+            cursor: pointer;
+            transition: 0.3s;
+            display: block;
+            margin: 20px auto;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .btn-toggle:hover {
+            box-shadow: 0 0 20px var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Resume Card Styling */
+        .resume-card {
+            background: #fff0f6;
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: left;
+            border-left: 8px solid #ff66a3;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        .resume-card h3 {
+            color: #ff66a3;
+            font-family: 'Orbitron', sans-serif;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        .resume-section {
+            margin-top: 20px;
+            border-top: 1px solid #ffcce0;
+            padding-top: 15px;
+        }
+
+        .resume-section h4 {
+            color: #ff3385;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Back Button Style inside Resume */
+        .btn-back {
+            background: #ff66a3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background: #ff3385;
+            transform: translateX(-5px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ffdae9;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+            <img src="logo.jpg" style="height: 100px; width: auto; object-fit: contain;">
+            <span style="color: white; font-family: 'Orbitron'; font-size: 2rem;">RNHS</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Strand.html">Strands</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Mission-vision.html">Mission & Vision</a></li>
+            <li><a href="Signup.html" style="color: #ff4d4d; font-weight: bold;">Log-out</a></li>
+        </ul>
+    </nav>
+
+    <header style="height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('jh.jpg'); background-size: cover; background-position: center;">
+        <h1 style="font-size: 3.5rem; font-family: 'Orbitron'; margin-bottom: 15px;">ROSALES NATIONAL <span style="color:var(--primary)">HIGH SCHOOL</span></h1>
+        <p style="color: #aaa; max-width: 700px; font-size: 1.1rem;">A beacon of excellence in Pangasinan, nurturing the intellectual and moral growth of our students.</p>
+    </header>
+
+    <section class="container">
+        
+        <button class="btn-toggle" onclick="toggleResume()" id="resumeBtn">VIEW APPLICANT RESUME</button>
+
+        <div id="resumeSection">
+            <div class="resume-card">
+                <button class="btn-back" onclick="toggleResume()">← BACK TO HOME</button>
+                
+                <h3>Rafaela Glace G. Caoayan</h3>
+                <p><strong>Contact:</strong> 09050683903 | rafaelacaoayan.email@gmail.com</p>
+                <p><strong>Address:</strong> Brgy. Carmen East, Zone-1, Rosales, Pangasinan</p>
+
+                <div class="resume-section">
+                    <h4>Objective</h4>
+                    <p>To gain practical experience as an Encoder Intern where I can apply my knowledge, improve my data management skills, and contribute to the efficient operation of the office.</p>
+                </div>
+
+                <div class="resume-section">
+                    <h4>Education</h4>
+                    <table>
+                        <tr><th>Level</th><th>School</th><th>Year</th></tr>
+                        <tr><td>Secondary (SHS)</td><td>Rosales National High School</td><td>2024–2025</td></tr>
+                        <tr><td>Secondary (JHS)</td><td>Rosales National High School</td><td>2022–2023</td></tr>
+                        <tr><td>Primary</td><td>Carmen Elementary School</td><td>2018–2019</td></tr>
+                    </table>
+                </div>
+
+                <div class="resume-section">
+                    <h4>Experience</h4>
+                    <p><strong>IBM – Internship (2025)</strong><br>
+                    Position: Encoder<br>
+                    Responsibilities: Updating records, organizing documents, and maintaining accuracy in the system.</p>
+                </div>
+
+                <div class="resume-section">
+                    <h4>Character References</h4>
+                    <ul>
+                        <li>Hon. Jasmine Gamboa - Barangay Captain</li>
+                        <li>Hon. Permin Bautista - Barangay Kagawad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="font-family: 'Orbitron'; color: var(--primary); margin-top: 60px; margin-bottom: 40px; text-align: center; font-size: 2.5rem;">Our Campus</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="library.jpg" class="card-img" alt="Library">
+                <div class="card-content"><h3>School Library</h3></div>
+            </div>
+            <div class="card">
+                <img src="rnhs gymnasium.jpg" class="card-img" alt="Gym">
+                <div class="card-content"><h3>Gymnasium</h3></div>
+            </div>
+            <div class="card">
+                <img src="stemb.jpg" class="card-img" alt="STEM">
+                <div class="card-content"><h3>STEM Building</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleResume() {
+            var section = document.getElementById("resumeSection");
+            var btn = document.getElementById("resumeBtn");
+            
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+                btn.innerHTML = "HIDE APPLICANT RESUME";
+                // Smooth scroll to resume when opened
+                section.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                section.style.display = "none";
+                btn.innerHTML = "VIEW APPLICANT RESUME";
+                // Optional: scroll back to top of container when closed
+                document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <footer>&copy; 2026 Rosales National High School | All rights reserved by: Rafaela Glace G. Caoayan</footer>
+</body>
+</html>
